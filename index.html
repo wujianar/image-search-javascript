@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无间AR云识别</title>
+    <style>
+        .desc {
+            line-height: 200%;
+        }
+
+        pre {
+            padding: 10px;
+            border: 1px solid #EDEDED;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>无间AR云识别</h1>
+
+<div class="desc">
+    <div>无间AR云识别，识别使用说明（Javascript）</div>
+    <div>官网： <a href="https://www.wujianar.com" target="_blank">www.wujianar.com</a></div>
+    <div>开发者中心： <a href="https://portal.wujianar.com" target="_blank">portal.wujianar.com</a></div>
+</div>
+
+<h2>1. 上传文件识别</h2>
+<div class="card">
+    <input type="file" accept="image/*" id="file1">
+    <pre id="result1"></pre>
+</div>
+
+<h2>2. Base64图片识别</h2>
+<div class="card">
+    <input type="file" accept="image/*" id="file2">
+    <pre id="result2"></pre>
+</div>
+
+<script src="./js/app.js"></script>
+<script src="./js/wujianar.js"></script>
+<script src="./js/libs/sha256.min.js"></script>
+<script>
+    new App().run();
+</script>
+</body>
+</html>
